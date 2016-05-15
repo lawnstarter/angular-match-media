@@ -123,7 +123,7 @@
         }
       }
     };
-    
+
     // Return the actual size (it's string name defined in the rules)
     this.get = getCurrentMatch;
 
@@ -238,5 +238,9 @@
     mediaFilter.$stateful = true;
     return mediaFilter;
   }]);
+
+  if (module) {
+    module.exports = app.name;
+  }
 
 })();
